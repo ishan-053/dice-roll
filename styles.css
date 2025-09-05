@@ -40,42 +40,29 @@ footer {
 
 }
 
-.button{
-  background-color: #4ECCA3;
+.button {
+  background: linear-gradient(135deg, #4ECCA3, #3e8e41);
   border: none;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;
+  padding: 14px 36px;
+  margin-top: 30px;   /* space below dice */
+  font-size: 18px;
   font-family: 'Indie Flower', cursive;
-  box-shadow: 0 9px #999; 
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 6px #2b5d44;
+  display: block;     /* centers the button */
+  margin-left: auto;
+  margin-right: auto;
 }
-.button:hover {background-color: #3e8e41} 
+
+.button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #5fffc7, #3e8e41);
+}
+
 .button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-@media (max-width: 600px) {
-  .container {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 4rem;
-    margin: 10px;
-  }
-
-  p {
-    font-size: 1.5rem;
-  }
-
-  img {
-    width: 100%;
-  }
+  transform: scale(0.98);
+  box-shadow: 0 3px #2b5d44;
 }
