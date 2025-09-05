@@ -12,8 +12,6 @@
 
 body {
   background-color: #393E46;
-  font-family: 'Libre Baskerville', serif;
-
 }
 
 h1 {
@@ -35,9 +33,23 @@ img {
 }
 
 footer {
-  margin-top: 5%;
+  margin-top: 3%;
   color: #EEEEEE;
   text-align: center;
-  font-family: 'Modern Antiqua', cursive;
+  font-family: 'Modern Antiqua', serif;
+
 }
 
+button{
+  margin-top: 2%;
+  margin-left: 47%;
+  margin-right: 47%;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  background-color: #4ECCA3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Indie Flower', cursive;
+}
