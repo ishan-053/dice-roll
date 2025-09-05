@@ -40,16 +40,42 @@ footer {
 
 }
 
-button{
-  margin-top: 2%;
-  margin-left: 47%;
-  margin-right: 47%;
-  font-size: 1.5rem;
-  padding: 10px 20px;
+.button{
   background-color: #4ECCA3;
   border: none;
-  border-radius: 5px;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
   cursor: pointer;
+  border-radius: 12px;
   font-family: 'Indie Flower', cursive;
+  box-shadow: 0 9px #999; 
+}
+.button:hover {background-color: #3e8e41} 
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin: 10px;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  img {
+    width: 100%;
+  }
 }
