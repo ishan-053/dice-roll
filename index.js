@@ -18,6 +18,3 @@ document.querySelector("button").addEventListener("click", function() {
   location.reload();
 });
 
-window.onload = function(){
-  loacalStorage.clear();
-}
