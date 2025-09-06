@@ -7,11 +7,12 @@
 .dice {
   text-align: center;
   display: inline-block;
-
 }
 
 body {
   background-color: #393E46;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -22,14 +23,31 @@ h1 {
   color: #4ECCA3;
 }
 
+/* Smaller heading on mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 4rem;
+    margin: 20px;
+  }
+}
+
 p {
   font-size: 2rem;
   color: #4ECCA3;
   font-family: 'Indie Flower', cursive;
 }
 
+/* Adjust text for mobile */
+@media (max-width: 600px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
+
 img {
   width: 80%;
+  max-width: 150px;   /* keeps dice images from getting too big */
+  height: auto;
 }
 
 footer {
@@ -37,9 +55,10 @@ footer {
   color: #EEEEEE;
   text-align: center;
   font-family: 'Modern Antiqua', serif;
-
+  font-size: 1rem;
 }
 
+/* Button Styling */
 .button {
   background: linear-gradient(135deg, #4ECCA3, #3e8e41);
   border: none;
@@ -55,13 +74,29 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 80%;   /* prevents button from being too wide */
+  max-width: 80%; /* prevents button from being too wide */
 }
 
-/* Mobile optimization */
+.button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #5fffc7, #3e8e41);
+}
+
+.button:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px #2b5d44;
+}
+
+/* Mobile Optimization */
 @media (max-width: 600px) {
   .button {
     padding: 12px 20px;
     font-size: 16px;
+    width: 100%;   /* full-width button on small screens */
+    max-width: none;
+  }
+
+  img {
+    max-width: 100px; /* smaller dice on small screens */
   }
 }
