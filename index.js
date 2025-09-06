@@ -17,3 +17,7 @@ if (randomnumber1 > randomnumber2) {
 document.querySelector("button").addEventListener("click", function() {
   location.reload();
 });
+
+window.onload = function(){
+  loacalStorage.clear();
+}
