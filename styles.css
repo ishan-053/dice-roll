@@ -45,24 +45,23 @@ footer {
   border: none;
   color: white;
   padding: 14px 36px;
-  margin-top: 30px;   /* space below dice */
+  margin-top: 30px;
   font-size: 18px;
   font-family: 'Indie Flower', cursive;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 6px #2b5d44;
-  display: block;     /* centers the button */
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 80%;   /* prevents button from being too wide */
 }
 
-.button:hover {
-  transform: scale(1.05);
-  background: linear-gradient(135deg, #5fffc7, #3e8e41);
-}
-
-.button:active {
-  transform: scale(0.98);
-  box-shadow: 0 3px #2b5d44;
+/* Mobile optimization */
+@media (max-width: 600px) {
+  .button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
 }
